@@ -1,2 +1,2 @@
 # CHITOS
-Consolidate Healthcare monitor using IoTivity Open Source
+Consolidated Health monitoring using IoTivity Open Source
