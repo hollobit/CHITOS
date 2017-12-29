@@ -5,5 +5,5 @@ Consolidated Health monitoring using IoTivity Open Source
 
 1. Test 
  - Test 1 
- |Test2|
+ !Test2!
  
