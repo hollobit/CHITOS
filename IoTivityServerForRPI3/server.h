@@ -1,0 +1,38 @@
+#ifndef SERVER_H
+#define SERVER_H
+
+#include "common.h"
+
+#include "./device/temperature0.h"
+// #include "./device/temperature1.h"
+// #include "./device/temperature2.h"
+// #include "./device/temperature3.h"
+#include "./device/temperature4.h"
+#include "./device/temperature5.h"
+#include "./device/bloodpressure0.h"
+#include "./device/bloodpressure1.h"
+#include "./device/bloodpressure2.h"
+#include "./device/scale0.h"
+#include "./device/scale1.h"
+#include "./device/scale2.h"
+#include "./device/scale3.h"
+#include "./device/scale4.h"
+#include "./device/scale5.h"
+#include "./device/scale6.h"
+#include "./device/scale7.h"
+#include "./device/scale8.h"
+#include "./device/glucose0.h"
+#include "./device/glucose1.h"
+#include "./device/glucose2.h"
+#include "./device/glucose3.h"
+#include "./device/glucose4.h"
+#include "./device/glucose5.h"
+#include "./device/glucose6.h"
+#include "./device/glucose7.h"
+#include "./device/glucose8.h"
+#include "./device/glucose9.h"
+#include "./device/glucose10.h"
+#include "./device/userid.h"
+#include "./device/clock.h"
+
+#endif

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/thermometer"
+          android:title="Thermometer"/>
+    <item android:id="@+id/bpm"
+          android:title="Blood Pressure Meter"/>
+    <item android:id="@+id/glucose_meter"
+          android:title="Glucose Meter"/>
+    <item android:id="@+id/scale"
+          android:title="Scale"/>
+    <item android:id="@+id/smartwatch"
+          android:title="Smart Watch"/>
+    <item android:id="@+id/about"
+          android:title="ABOUT"/>
+</menu>

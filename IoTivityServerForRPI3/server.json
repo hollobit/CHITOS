@@ -1,0 +1,618 @@
+{
+    "acl": {
+        "aclist2": [
+            {
+                "aceid": 1,
+                "subject": { "conntype": "anon-clear" },
+                "resources": [
+                    { "href": "/oic/res" },
+                    { "href": "/oic/d" },
+                    { "href": "/oic/p" },
+                    { "href": "/oic/sec/doxm" }
+                ],
+                "permission": 2
+            },
+            {
+                "aceid": 2,
+                "subject": { "conntype": "auth-crypt" },
+                "resources": [
+                    { "href": "/oic/res" },
+                    { "href": "/oic/d" },
+                    { "href": "/oic/p" },
+                    { "href": "/oic/sec/doxm" }
+                ],
+                "permission": 2
+            },
+            {
+                "aceid": 3,
+                "subject": { "uuid": "32323232-3232-3232-3232-323232323232" },
+                "resources": [{ "wc": "*" }],
+                "permission": 7
+            },
+            {
+                "aceid": 4,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383838" },
+                "resources": [{ "href": "/BodyTemperatureBaselineResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 5,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383838" },
+                "resources": [{ "href": "/BodyTemperatureBaselineResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 6,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383839" },
+                "resources": [{ "href": "/BodyTemperatureLLResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 7,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383839" },
+                "resources": [{ "href": "/BodyTemperatureLLResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 8,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383840" },
+                "resources": [{ "href": "/BodyTemperatureBatchResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 9,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383840" },
+                "resources": [{ "href": "/BodyTemperatureBatchResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 10,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383841" },
+                "resources": [{ "href": "/BodyLocationResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 11,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383841" },
+                "resources": [{ "href": "/BodyLocationResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 12,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383842" },
+                "resources": [{ "href": "/BodyLocationTemperatureResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 13,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383842" },
+                "resources": [{ "href": "/BodyLocationTemperatureResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 14,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383843" },
+                "resources": [{ "href": "/BloodPressureResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 15,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383843" },
+                "resources": [{ "href": "/BloodPressureResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 16,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383844" },
+                "resources": [{ "href": "/PulseRateResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 17,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383844" },
+                "resources": [{ "href": "/PulseRateResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 18,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383845" },
+                "resources": [{ "href": "/BMIResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 19,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383845" },
+                "resources": [{ "href": "/BMIResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 20,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383846" },
+                "resources": [{ "href": "/BodyFatResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 21,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383846" },
+                "resources": [{ "href": "/BodyFatResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 22,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383847" },
+                "resources": [{ "href": "/BodyFatFreeMassResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 23,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383847" },
+                "resources": [{ "href": "/BodyFatFreeMassResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 24,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383848" },
+                "resources": [{ "href": "/BodySoftLeanMassResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 25,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383848" },
+                "resources": [{ "href": "/BodySoftLeanMassResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 26,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383849" },
+                "resources": [{ "href": "/BodyWaterResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 27,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383849" },
+                "resources": [{ "href": "/BodyWaterResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 28,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383850" },
+                "resources": [{ "href": "/HeightResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 29,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383850" },
+                "resources": [{ "href": "/HeightResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 30,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383851" },
+                "resources": [{ "href": "/WeightResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 31,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383851" },
+                "resources": [{ "href": "/WeightResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 32,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383852" },
+                "resources": [{ "href": "/GlucoseResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 33,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383852" },
+                "resources": [{ "href": "/GlucoseResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 33,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383853" },
+                "resources": [{ "href": "/GlucoseCarbResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 34,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383853" },
+                "resources": [{ "href": "/GlucoseCarbResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 35,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383854" },
+                "resources": [{ "href": "/GlucoseExerciseResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 36,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383854" },
+                "resources": [{ "href": "/GlucoseExerciseResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 37,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383855" },
+                "resources": [{ "href": "/GlucoseHbA1cResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 38,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383855" },
+                "resources": [{ "href": "/GlucoseHbA1cResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 39,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383856" },
+                "resources": [{ "href": "/GlucoseHealthResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 40,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383856" },
+                "resources": [{ "href": "/GlucoseHealthResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 41,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383857" },
+                "resources": [{ "href": "/GlucoseMealResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 42,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383857" },
+                "resources": [{ "href": "/GlucoseMealResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 43,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383858" },
+                "resources": [{ "href": "/GlucoseMedicationResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 44,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383858" },
+                "resources": [{ "href": "/GlucoseMedicationResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 45,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383859" },
+                "resources": [{ "href": "/GlucoseSampleLocationResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 46,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383859" },
+                "resources": [{ "href": "/GlucoseSampleLocationResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 47,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383860" },
+                "resources": [{ "href": "/GlucoseTesterResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 48,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383860" },
+                "resources": [{ "href": "/GlucoseTesterResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 49,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383861" },
+                "resources": [{ "href": "/ClockResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 50,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383861" },
+                "resources": [{ "href": "/ClockResURI" }],
+                "permission": 6
+            },
+            {
+                "aceid": 51,
+                "subject": { "uuid": "32383838-3838-3838-3838-383838383862" },
+                "resources": [{ "href": "/UserIDResURI" }],
+                "permission": 7
+            },
+            {
+                "aceid": 52,
+                "subject": { "uuid": "38383838-3838-3838-3838-383838383862" },
+                "resources": [{ "href": "/UserIDResURI" }],
+                "permission": 6
+            }
+        ],
+        "rowneruuid" : "31313131-3131-3131-3131-313131313131"
+    },
+    "pstat": {
+        "dos": {"s": 3, "p": false},
+        "isop": true,
+        "rowneruuid": "31313131-3131-3131-3131-313131313131",
+        "cm": 0,
+        "tm": 0,
+        "om": 4,
+        "sm": 4
+        },
+    "doxm": {
+        "oxms": [0],
+        "oxmsel": 0,
+        "sct": 1,
+        "owned": true,
+        "deviceuuid": "31313131-3131-3131-3131-313131313131",
+        "devowneruuid": "32323232-3232-3232-3232-323232323232",
+        "rowneruuid": "31313131-3131-3131-3131-313131313131"
+    },
+    "cred": {
+        "creds": [
+            {
+                "credid": 1,
+                "subjectuuid": "32323232-3232-3232-3232-323232323232",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "AAAAAAAAAAAAAAAA",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 2,
+                "subjectuuid": "32383838-3838-3838-3838-383838383838",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 3,
+                "subjectuuid": "32383838-3838-3838-3838-383838383839",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 4,
+                "subjectuuid": "32383838-3838-3838-3838-383838383840",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 5,
+                "subjectuuid": "32383838-3838-3838-3838-383838383841",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 6,
+                "subjectuuid": "32383838-3838-3838-3838-383838383842",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 7,
+                "subjectuuid": "32383838-3838-3838-3838-383838383843",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 8,
+                "subjectuuid": "32383838-3838-3838-3838-383838383844",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 9,
+                "subjectuuid": "32383838-3838-3838-3838-383838383845",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 10,
+                "subjectuuid": "32383838-3838-3838-3838-383838383846",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 11,
+                "subjectuuid": "32383838-3838-3838-3838-383838383847",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 12,
+                "subjectuuid": "32383838-3838-3838-3838-383838383848",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 13,
+                "subjectuuid": "32383838-3838-3838-3838-383838383849",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 14,
+                "subjectuuid": "32383838-3838-3838-3838-383838383850",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 15,
+                "subjectuuid": "32383838-3838-3838-3838-383838383851",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 16,
+                "subjectuuid": "32383838-3838-3838-3838-383838383852",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 17,
+                "subjectuuid": "32383838-3838-3838-3838-383838383853",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 18,
+                "subjectuuid": "32383838-3838-3838-3838-383838383854",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 19,
+                "subjectuuid": "32383838-3838-3838-3838-383838383855",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 20,
+                "subjectuuid": "32383838-3838-3838-3838-383838383856",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 21,
+                "subjectuuid": "32383838-3838-3838-3838-383838383857",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 22,
+                "subjectuuid": "32383838-3838-3838-3838-383838383858",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 23,
+                "subjectuuid": "32383838-3838-3838-3838-383838383859",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 24,
+                "subjectuuid": "32383838-3838-3838-3838-383838383860",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 24,
+                "subjectuuid": "32383838-3838-3838-3838-383838383861",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            },
+            {
+                "credid": 24,
+                "subjectuuid": "32383838-3838-3838-3838-383838383862",
+                "credtype": 1,
+                "period": "20150630T060000/20990920T220000",
+                "privatedata": {
+                    "data": "CCCCCCCCCCCCCCCC",
+                    "encoding": "oic.sec.encoding.raw"
+                }
+            }
+        ],
+        "rowneruuid": "32323232-3232-3232-3232-323232323232"
+    }
+}

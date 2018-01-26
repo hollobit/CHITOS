@@ -1,0 +1,93 @@
+import os
+SConscript('../iotivitylib/build_common/SConscript')
+Import('env')
+server_env = env.Clone()
+
+#server_env.AppendUnique(CXXFLAGS=['-std=c++11'])
+
+server_env.AppendUnique(CPPPATH=[
+    '../iotivitylib/resource/csdk/logger/include',
+    '../iotivitylib/resource/csdk/include',
+    '../iotivitylib/resource/csdk/stack/include',
+    '../iotivitylib/resource/csdk/security/include',
+    '../iotivitylib/resource/oc_logger/include',
+    '../iotivitylib/resource/csdk/include',
+    '../iotivitylib/resource/c_common',
+    '../iotivitylib/resource/c_common/oic_malloc/include',
+    '../iotivitylib/resource/c_common/oic_string/include'
+])
+
+server_env.AppendUnique(LIBPATH=[
+    '../iotivitylib/out/linux/x86_64/release'
+])
+
+server_env.AppendUnique(CXXFLAGS=['-std=c++0x', '-Wall', '-pthread'])
+server_env.AppendUnique(LIBS=['pthread'])
+server_env.Append(LINKFLAGS=['-Wl,--no-as-needed'])
+server_env.PrependUnique(LIBS=['c_common'])
+server_env.PrependUnique(LIBS=['logger'])
+server_env.PrependUnique(LIBS=['octbstack'])
+server_env.AppendUnique(LIBS=['mbedtls', 'mbedx509', 'mbedcrypto'])
+server_env.AppendUnique(CPPDEFINES=['TB_LOG'])
+
+#server_env.AppendUnique(LIBS=['wiringPi'])
+
+#ocserverbasicops = server_env.Program(
+#    'ocserverbasicops', ['common.cpp', 'ocserverbasicops.cpp'])
+#occlientbasicops = server_env.Program(
+#    'occlientbasicops', ['common.cpp', 'occlientbasicops.cpp'])
+
+# ETRI
+server = server_env.Program(
+    'server', [
+        'common.cpp', 
+#        'device/resource.cpp',
+#        'bcm2835-1.46/src/bcm2835.c',
+#        'MySignals/arduPi.cpp',
+#        'MySignals/MySignals.cpp',
+#        'MySignals/MySignals_BLE.cpp',
+#        'MySignals/common.cpp',
+        'MySignals/temperature.cpp',
+        'MySignals/bloodpressure.cpp',
+        'MySignals/glucose.cpp',
+#        'MySignals/controlboard.cpp',
+        'MySignals/scale.cpp',
+        'device/temperature0.cpp',
+#        'device/temperature1.cpp', 
+#        'device/temperature2.cpp', 
+#        'device/temperature3.cpp',
+        'device/temperature4.cpp',
+        'device/temperature5.cpp',
+        'device/bloodpressure0.cpp',
+        'device/bloodpressure1.cpp',
+        'device/bloodpressure2.cpp',
+        'device/scale0.cpp',
+        'device/scale1.cpp',
+        'device/scale2.cpp',
+        'device/scale3.cpp',
+        'device/scale4.cpp',
+        'device/scale5.cpp',
+        'device/scale6.cpp',
+        'device/scale7.cpp',
+        'device/scale8.cpp',
+        'device/glucose0.cpp',
+        'device/glucose1.cpp',
+        'device/glucose2.cpp',
+        'device/glucose3.cpp',
+        'device/glucose4.cpp',
+        'device/glucose5.cpp',
+        'device/glucose6.cpp',
+        'device/glucose7.cpp',
+        'device/glucose8.cpp',
+        'device/glucose9.cpp',
+        'device/glucose10.cpp',
+        'device/userid.cpp',
+        'device/clock.cpp',
+        'server.cpp'
+        ])
+
+#client = server_env.Program(
+#    'client', [
+#        'common.cpp', 
+#        'client.cpp'
+#        ])
